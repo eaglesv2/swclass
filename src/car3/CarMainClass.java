@@ -33,6 +33,15 @@ class Car { //정의(설계)   캡슐화 encapsulation
 	public void drive() { //쓸거 없으면 void
 		System.out.println("멋지게 드라이브하자");
 	} //drive-end
+	
+	public void print() { //출력전문메소드
+		System.out.println(color + ", " + door);
+	}
+	
+	public String toString() { //overriding (조상의 것 재사용)
+		return "[자동차 색은 말하자면] " + color +"이고 "
+				+ "[문의 갯수는 다시 얘기하면] " + door + "개 입니다";
+	}
 } //Car-class-end
 
 public class CarMainClass { // CarMainClass.java
@@ -48,6 +57,12 @@ public class CarMainClass { // CarMainClass.java
 		Car urcar = new Car();
 		urcar.setColor("blue");
 		urcar.setDoor(2);
+		
+		mycar.print();
+		
+		System.out.println(mycar.toString());
+		System.out.println(mycar); // toString() 생략 가능하다  
+		                           // 출력전문 메소드 만들어놓고 객체만 출력
 		
 		//System.out.println(mycar.color);
 		//System.out.println(mycar.door);	

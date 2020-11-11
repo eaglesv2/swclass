@@ -27,12 +27,16 @@ class BBang {
 	public void eat() {
 		System.out.println("빵을 맛있게 먹자"); //객체가 생성되면 기존에 생성된거에서 빌려가서 씀 / 메모리 영향 x
 	}
+	public String toString() {
+		return type + "\t" + price + "원";
+	}
 }
 
 public class Bakery_BBang {
 	public static void main(String args[]) {
 		BBang pizza = new BBang("피자빵",2000); //메소드 호출문과 유사
 		BBang soboro = new BBang();
+		BBang pat = new BBang("단팥빵",3000);
 		//pizza.setType("피자빵");
 		soboro.setType("소보루빵");
 		//pizza.setPrice(2000);
@@ -41,6 +45,7 @@ public class Bakery_BBang {
 		
 		System.out.println(pizza.getType() + "\t" + pizza.getPrice() + "원");
 		System.out.println(soboro.getType() + "\t" + soboro.getPrice() + "원");
+		System.out.println(pat);
 		pizza.eat();
 		
 	}
