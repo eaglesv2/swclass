@@ -1,4 +1,4 @@
-package array;
+package HangMan;
 
 import java.util.*;
 

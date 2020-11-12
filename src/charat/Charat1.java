@@ -1,4 +1,4 @@
-package charat;
+package charAt;
 
 public class Charat1 {
 	public static void main(String argsp[]) {
