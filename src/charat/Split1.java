@@ -1,4 +1,4 @@
-package charAt;
+package charat;
 
 class Cafe1 {
 	//private String pummok;
